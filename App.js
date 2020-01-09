@@ -14,8 +14,8 @@ app.get('/about', function(req, res){
 });
 
 //Setup contact route
-app.get('/contact', function(req, res){
-    res.sendFile(path.join(__dirname+"/views/contact.html"));
+app.get('/AddTo', function(req, res){
+    res.sendFile(path.join(__dirname+"/views/AddTo.html"));
 });
 app.use(express.static(__dirname+"/views"));
 app.use('/', router);
